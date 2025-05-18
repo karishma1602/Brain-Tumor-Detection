@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+{
+ font-family:Arial,helvetica,sans-serif;
+ background-image:url("C:\Users\91808\Desktop\DSC_0191.JPG");
+
+}
+.main{
+    display: flexbox;
+    align-items: center;
+    margin-left: 25%;
+    padding-top:40px;
+    height:30vh;
+    width: 50%;
+    padding-left:25% ;
+    padding-top:15% ;
+    
+}
+.box{
+    margin-right: 670px;
+}
+.name{
+    margin-left: 26px;
+}
+.file{
+    margin-left: 26px;
+}
+.buttn{
+    margin-left: 50px;
+    background-color: rgb(17, 255, 84);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 51px;
+    height: 4vh;
+}
+.buttn:hover{
+    background-color: rgb(21, 181, 66);
+}

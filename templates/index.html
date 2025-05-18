@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brain Tumor Detection Result</title>
+    
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            margin-top: 80px; /* Add margin to create space on top */
+        }
+        
+        h1 {
+            margin-top: 120px; /* Add margin to create space on top of the heading */
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>Brain Tumor Detection</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <h4>Upload Only MRI Image With .jpg Extension</h4>
+        <input type="file" name="tumor" accept=".jpg,.png,.jpeg">
+        <input type="submit" value="Submit">
+    </form>
+   
+    <div>
+
+        {% if tumor_filename %}
+            <h3>Tumor File: {{ tumor_filename }}</h3>
+            <h2>Prediction Result:</h2>
+            {% if tumor_detected %}
+                <p><h3>Tumor</h3></p>
+            {% else %}
+                <p><h3>No Tumor</h3></p>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
